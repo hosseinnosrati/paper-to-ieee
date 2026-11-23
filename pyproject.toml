@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper2ieee"
+version = "1.0.0"
+description = "Autonomous Markdown-to-IEEE Transactions Publication Engine: Convert Markdown to publication-grade two-column IEEE DOCX, PDF, and LaTeX without LaTeX bloat."
+readme = "README.md"
+authors = [
+    { name = "Mohammad Hossein Nosrati", email = "nosrati_m@nt.iust.ac.ir" }
+]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: Markup :: Markdown"
+]
+keywords = ["ieee", "ieee-transactions", "markdown", "latex", "pdf", "academic-publishing", "research"]
+requires-python = ">=3.10"
+dependencies = [
+    "python-docx>=0.8.11"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0"
+]
+
+[project.scripts]
+paper2ieee = "paper2ieee.cli:main"
+paper-to-ieee = "paper2ieee.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hosseinnosrati/paper-to-ieee"
+Repository = "https://github.com/hosseinnosrati/paper-to-ieee"
+Issues = "https://github.com/hosseinnosrati/paper-to-ieee/issues"
