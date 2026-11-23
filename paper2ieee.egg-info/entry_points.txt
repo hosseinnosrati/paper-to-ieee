@@ -1,0 +1,3 @@
+[console_scripts]
+paper-to-ieee = paper2ieee.cli:main
+paper2ieee = paper2ieee.cli:main

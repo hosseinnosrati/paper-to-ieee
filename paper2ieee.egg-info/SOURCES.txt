@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+paper2ieee/__init__.py
+paper2ieee/cli.py
+paper2ieee/docx_builder.py
+paper2ieee/latex_builder.py
+paper2ieee/parser.py
+paper2ieee/pdf_builder.py
+paper2ieee/validator.py
+paper2ieee.egg-info/PKG-INFO
+paper2ieee.egg-info/SOURCES.txt
+paper2ieee.egg-info/dependency_links.txt
+paper2ieee.egg-info/entry_points.txt
+paper2ieee.egg-info/requires.txt
+paper2ieee.egg-info/top_level.txt
+tests/test_converter.py
